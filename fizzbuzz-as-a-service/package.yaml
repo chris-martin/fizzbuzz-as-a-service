@@ -1,5 +1,5 @@
 name: fizzbuzz-as-a-service
-version: 0.1.0.1
+version: 0.1.0.2
 category: Network APIs
 
 synopsis:    FizzBuzz as a service.
@@ -25,7 +25,7 @@ executables:
       - -threaded
     dependencies:
       - async
-      - base >= 4.9 && < 4.10
+      - base >= 4.9 && < 4.11
       - bytestring
       - network-simple
       - optparse-applicative
