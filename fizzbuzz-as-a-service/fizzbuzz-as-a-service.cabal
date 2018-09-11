@@ -1,35 +1,31 @@
+name:     fizzbuzz-as-a-service
+version:  0.1.0.2
+category: Network APIs
+synopsis: FizzBuzz as a service
+
+description: FizzBuzz as a service.
+
+homepage: https://github.com/chris-martin/fizzbuzz-as-a-service
+
+author:     Chris Martin <ch.martin@gmail.com>
+maintainer: Chris Martin <ch.martin@gmail.com>
+
+license: Apache-2.0
+license-file: license.txt
+
 cabal-version: >= 1.10
-
--- This file has been generated from package.yaml by hpack version 0.29.7.
---
--- see: https://github.com/sol/hpack
---
--- hash: f31e931c8a54dfd20c4c4256406a6bdfe07a263c43db0bdb2a46ef96dfe481ba
-
-name:           fizzbuzz-as-a-service
-version:        0.1.0.2
-synopsis:       FizzBuzz as a service.
-description:    FizzBuzz as a service.
-category:       Network APIs
-homepage:       https://github.com/chris-martin/fizzbuzz-as-a-service
-author:         Chris Martin <ch.martin@gmail.com>
-maintainer:     Chris Martin <ch.martin@gmail.com>
-license:        Apache-2.0
-license-file:   license.txt
-build-type:     Simple
+build-type: Simple
 
 executable fizzbuzz-server
+  default-language: Haskell2010
   main-is: fizzbuzz-server.hs
-  hs-source-dirs:
-      app
+  hs-source-dirs: app
   default-extensions: NoImplicitPrelude
   ghc-options: -Wall -threaded
+
   build-depends:
       async
     , base >=4.9 && <4.12
     , bytestring
     , network-simple
     , optparse-applicative
-  other-modules:
-      Paths_fizzbuzz_as_a_service
-  default-language: Haskell2010
