@@ -25,7 +25,7 @@ executables:
       - -threaded
     dependencies:
       - async
-      - base >= 4.9 && < 4.11
+      - base >= 4.9 && < 4.12
       - bytestring
       - network-simple
       - optparse-applicative
